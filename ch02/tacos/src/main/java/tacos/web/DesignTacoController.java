@@ -73,6 +73,7 @@ public void addIngredientsToModel(Model model) {
  */
 
 //tag::processDesignValidated[]
+	// @Valid 表示对提交的taco对象进行校验
   @PostMapping
   public String processDesign(@Valid @ModelAttribute("design") Taco design, Errors errors, Model model) {
     if (errors.hasErrors()) {
