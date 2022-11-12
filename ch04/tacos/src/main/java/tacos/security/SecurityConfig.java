@@ -55,7 +55,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
       // tag::enableLogout[]
       .and()
         .logout()
-          .logoutSuccessUrl("/")
+          .logoutSuccessUrl("/login")
       // end::enableLogout[]
           
       // Make H2-Console non-secured; for debug purposes
